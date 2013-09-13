@@ -4,7 +4,24 @@ gem 'rails', '4.0.0'
 
 group :development, :test do
   gem 'sqlite3', '1.3.7'
-  gem 'rspec-rails', '2.13.1'
+  gem 'rspec-rails'
+  gem 'guard-rspec'
+  
+  gem 'spork-rails', github: 'sporkrb/spork-rails'
+  gem 'guard-spork'
+  gem 'childprocess'
+  
+  # Uncomment this line on OS X.
+  # gem 'growl', '1.0.3'
+
+  # Uncomment these lines on Linux.
+  # gem 'libnotify'
+  # gem 'ruby_gntp'
+
+  # Uncomment these lines on Windows.
+  # gem 'rb-notifu', '0.0.4'
+  # gem 'win32console', '1.3.2'
+  # gem 'wdm', '0.1.0'
 end
 
 group :test do
